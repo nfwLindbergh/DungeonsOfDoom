@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dungeons of DOOM</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="bundle.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Dungeons of DOOM</h1>
+    </div>
+    <input
+      type="hidden"
+      id="playerData"
+      data-name="Ygritte"
+      data-health="200"
+      data-strength="30"
+    />
+    <div id="monsters">
+      <input data-name="Skeleton" data-health="80" data-strength="10" />
+      <input data-name="Slime" data-health="120" data-strength="5" />
+      <input data-name="Rat" data-health="40" data-strength="7" />
+    </div>
+    <div id="combatArea">
+      <div id="player">
+        <h2>Player</h2>
+        <label for="playerName">Name </label
+        ><input type="text" id="playerName" /><br />
+        <label for="playerStrength">Strength </label
+        ><input type="number" id="playerStrength" readonly disabled /><br />
+        <label for="playerHealth">Health </label
+        ><input type="number" id="playerHealth" readonly disabled /><br />
+      </div>
+      <button id="fight">FIGHT!</button>
+      <div id="monster">
+        <h2>Monster</h2>
+        <label for="monsterName">Name </label
+        ><input type="text" id="monsterName" readonly disabled /><br />
+        <label for="monsterStrength">Strength </label
+        ><input type="number" id="monsterStrength" readonly disabled /><br />
+        <label for="monsterHealth">Health </label
+        ><input type="number" id="monsterHealth" readonly disabled /><br />
+      </div>
+    </div>
+    <div id="console"></div>
+  </body>
+</html>
